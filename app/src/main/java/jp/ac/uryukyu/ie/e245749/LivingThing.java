@@ -30,6 +30,14 @@ public class LivingThing {
         return this.attack;
     }
 
+    public void setDead(boolean dead){
+        this.dead = dead;
+    }
+
+    public void setHitPoint(int hitPoint){
+        this.hitPoint = hitPoint;
+    }
+
     public void attack(LivingThing opponent){
         if(dead != true){
             int damage = (int)(Math.random() * attack);
